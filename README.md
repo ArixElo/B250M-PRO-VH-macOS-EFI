@@ -1,8 +1,8 @@
 # MSI B250M-PRO-VH/Gigabyte GA-Z270-Gaming-K3 macOS OpenCore EFI 
 
 ## macOS & OpenCore Versions
-- macOS Big Sur 11.7/Monterey 12.6/Ventura 13.5.
-- OpenCore r0.8.4
+- macOS Big Sur 11.7.10/Monterey 12.7.6/Ventura 13.7/Sonoma 14.7/Sequoia 15.0.
+- OpenCore r1.0.1
 
 **Catalina is not supported!**
 
@@ -10,7 +10,7 @@
 
 ## Usage guide:
 - Make macOS Installer by following this link: https://dortania.github.io/OpenCore-Install-Guide/installer-guide/
-- After making it, simply download latest version of EFI, and unpack EFI folder, use https://github.com/corpnewt/GenSMBIOS to generate your SMBIOS configs for **iMac18,1** or **iMac18,3** if you want to use dedicated GPU.
+- After making it, simply download latest version of EFI, and unpack EFI folder, use https://github.com/corpnewt/GenSMBIOS to generate your SMBIOS configs for **iMac18,1** (iGPU and macOS Ventura or lower only) or **iMacPro1,1** (Dedicated GPU and macOS Sonoma or higher only)
 - P.S for Gaming K3 motherboard, pick the **slave-v2-z270** branch instead.
 - After that, simply drag your EFI folder to root of your macOS Installer USB drive.
 - Reboot to UEFI and set recommended settings that are under this.
@@ -23,7 +23,6 @@
 - Unmount all EFI partitions after so. 
 - SSD/NVMe drives recommended.
 
-- For Ventura installation you need to use this variable for macrecovery to download Internet Recovery Image: **Mac-4B682C642B45593E**
 
 ## UEFI Recommended Settings for MSI Board:
 ```
@@ -69,7 +68,7 @@ That EFI doesn't have verbose mode turned on by default, but you can simply set 
 
 ## Specs that are used by this EFI:
 - Motherboard: MSI B250M-PRO-VH/Gigabyte GA-Z270-Gaming-K3,
-- CPU: Intel Core i7 7700 (4x3.6GHz+ Turbo Boost to 4.20GHz),
+- CPU: Intel Core i7 7700 (4x3.6GHz + Turbo Boost up to 4.20GHz),
 - GPU Intel HD Graphics 630/AMD Radeon RX 570 4GB,
 - Memory: 32GB DDR4,
 - Disk on which macOS is installed: GOODRAM IRDM 128GB (SSD, SATA)
@@ -81,10 +80,10 @@ That EFI doesn't have verbose mode turned on by default, but you can simply set 
 - Network,
 - Night Shift,
 - Bluetooth with a Realtek Dongle (also works on Monterey!),
-- iMessage and FaceTime after running iMessageFix (https://t.me/arixnara/29) **For Ventura this fix is not required.**,
+- iMessage and FaceTime after running iMessageFix (https://t.me/arixnara/29) **For Ventura and higher this fix is not required.**,
 - System updates.
 
 ## What's not working:
-- Sleep & Wake (can't be fixable on MSI)
+- Sleep & Wake (can't be fixable on MSI and iGPU)
 
 README is heavily inspired by: https://github.com/lshbluesky/OC-GA-B250M-DS3H-Hackintosh
