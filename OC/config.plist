@@ -879,7 +879,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>Default</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1033,23 +1033,23 @@
 			<key>AdviseFeatures</key>
 			<true/>
 			<key>MLB</key>
-			<string>C02712130J9J0PG1F</string>
+			<string>C02730405GUJG36JA</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
-			<data>5Jp5j0RJ</data>
+			<data>4F9FLXs/</data>
 			<key>SpoofVendor</key>
 			<true/>
 			<key>SystemMemoryStatus</key>
 			<string>Auto</string>
 			<key>SystemProductName</key>
-			<string>iMac18,3</string>
+			<string>iMacPro1,1</string>
 			<key>SystemSerialNumber</key>
-			<string>C02TG8ZDJ1GJ</string>
+			<string>C02V44Y0HX87</string>
 			<key>SystemUUID</key>
-			<string>3B28EC4A-A46E-4E51-B31A-D2F9C7BCA994</string>
+			<string>76FAB2B8-CD9B-4107-A340-DB5C0EED9354</string>
 		</dict>
 		<key>UpdateDataHub</key>
 		<true/>
